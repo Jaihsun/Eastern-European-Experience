@@ -1,7 +1,6 @@
-<h1 align="center">Code Institute Website</h1>
+<h1 align="center">Eastern European Experience</h1>
 
-[View the live project here.](https://codeinstitute.net)
-
+[View the live project here.](https://####)
 This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
 
 <h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
@@ -12,28 +11,34 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
     -   #### First Time Visitor Goals
 
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
+        1. As a First Time Visitor, I want to explore Eastern Europe as a potential holiday destination. The main purpose of this website is to promote Eastern European tourism for the Ukraine, Poland, Hungary and Czech Republic.
+        For the purposes of this webite, Eastern Europe will be limited to 4 countries Poland, Ukraine, Hungary and Russia.In particular, the cities of Krakow Poland, Budapest Hungary, St. Petersberg Russia and Kiev Ukraine.
+        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content that provides a historical context for each city, lists the main attractions for those cities.
+        3. The website will show case the most famous attractions in each city and include a gallary feature and a map to showcase these cities 
+        4. The website is essentially promoting a travel booking service and will allow the customoer to exchange contsct details and be able to get into contact with the company to book. 
+        5. As a first time visitor, I can get truusted testimonials on the service whichnis outlines on the website.
+        
+        
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to find information about coding challenges.
+        1. As a Returning Visitor, I want to browse the gallery and decide which city is the best.
         2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find community links.
+        
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-        2. As a Frequent User, I want to check to see if there are any new blog posts.
-        3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
+        1. As a Frequent User, I want to see if new cities ave been added to the site package.
+        2. As a frequent User, I want to check to see if there are any new articles.
+        3. As  a frequesnt user, I want to sign up to t he newsletter so that I am eamailed any major updates and/or changes to the website or organisation. 
+        
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue red, and white.
+        -   The two main colours used are Code Insititue light grey (#e1e8e3), and white.
     -   #### Typography
-        -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+        -   The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
     -   #### Imagery
-        -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+        -   Particular attention was paid to the imagery of this website to promote the beauty of Eastern European architecture. The large, background hero image of Prague city was used to provide a striking visual and catch the user's attention. The hero image was cosen as it strikes the perfect balance to the timeless beauty that is the city of Prague and also vibrant and dynamic sunrise. 
 
 *   ### Wireframes
 
@@ -55,6 +60,7 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+-   [jQuery](https://jquery.com/)
 
 ### Frameworks, Libraries & Programs Used
 
