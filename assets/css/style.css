@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap:100,200,300,400,500,600,700');
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
 *
 {
     margin: 0;
@@ -10,9 +13,9 @@
     font-family: 'Oswald' sans-serif;
 }
 
-
 .hero-image{
-    height: 50%;
+    height: auto;
+    width:100%;
     background-image: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,13 +33,15 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-size: 9vw;
 }
+
+
 
 .main-advert{
     font-size: 80px;
     text-shadow: 2px 2px 4px #000000;
 }
-
 
 .navbar{
     padding: 20px 0;
@@ -48,7 +53,9 @@
     font-size: 2em;
     color: #262626;
     font-style: italic;
-    font-family: 'Redressed', cursive;
+    font-family: 'Oswald', sans-serif;
+    cursor: pointer;
+    font-size: 4vw;
 }
 
 .nav-item{
@@ -75,6 +82,48 @@
     width: 66%;
 }
 
-.header{
+header{
     width: 100%;
 }
+
+.responsive{
+    width: 100%;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    background: no-repeat;
+}
+
+h2{
+    width: 100%;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    background: no-repeat;
+    font-size: 5vw;
+    text-align: justify;
+}
+
+.main-advert{
+    width: 100%;
+    position: center;
+    background-size: cover;
+    background-position: center;
+    background: no-repeat;
+}
+
+.section-header{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    background: url(..assets/hero-image/1hero-image.jpg)
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+
