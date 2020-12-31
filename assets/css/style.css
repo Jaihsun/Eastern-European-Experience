@@ -7,9 +7,6 @@
 /* blah blah */
 *
 {
-    margin-left: 0px;
-    padding: 0px;
-    box-sizing: boder;
     font-family: 'Oswald' sans-serif;
 }
 /* blah blah */
@@ -55,6 +52,8 @@
     font-family: 'Oswald', sans-serif;
     cursor: pointer;
     font-size: 4vw;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 /* blah blah */
 .nav-item{
@@ -130,12 +129,6 @@ h4{
    text-align: center; 
 }
 
-.button{
-    margin: 32px 0px 0px;
-    padding: 64px 0px 0px;
-    color: #277BBA;
-}
-   
 .col-6{
     width: 30%;
 }
@@ -143,13 +136,32 @@ h4{
 .box{
     width: 100%;
     float: center;
-    
     background-color: #fff;
-    padding: 15px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 15);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 15);
 
 }
 
 .container{
     float: center;
+    margin-top: 50px;
+
+}
+
+button{
+    text-align: center;
+}
+
+.p1{
+    margin-top: 50px;
+}
+
+hearder{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navbar-custom {
+    background-color: #ff5500;
 }
