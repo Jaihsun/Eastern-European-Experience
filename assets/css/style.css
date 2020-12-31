@@ -4,15 +4,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-
+/* blah blah */
 *
 {
-    margin: 0;
-    padding: 0;
+    margin-left: 0px;
+    padding: 0px;
     box-sizing: boder;
     font-family: 'Oswald' sans-serif;
 }
-
+/* blah blah */
 .hero-image{
     height: auto;
     width:100%;
@@ -23,6 +23,7 @@
     position: relative;
     text-align: center;
      object-fit: fill;
+     margin-bottom: 20px;
 }
 
 /* blah blah */
@@ -35,18 +36,16 @@
   color: white;
   font-size: 9vw;
 }
-
-
-
+/* blah blah */
 .main-advert{
     font-size: 80px;
     text-shadow: 2px 2px 4px #000000;
 }
-
+/* blah blah */
 .navbar{
     padding: 20px 0;
 }
-
+/* blah blah */
 .navbar-brand{
     font-weight: 600;
     text-transform: uppercase;
@@ -57,43 +56,43 @@
     cursor: pointer;
     font-size: 4vw;
 }
-
+/* blah blah */
 .nav-item{
     font-weight: 600;
     text-transform: uppercase;
     color:#fff;
-
 }
-
+/* blah blah */
 .nav-link dropdown-toggle {
     background: #262626;
 }
-
+/* blah blah */
 .button-image{
     background-color: #e7e7e7;
 }
-
+/* blah blah */
 .prague-thumbnail{
     max-width: 100%;
     height: auto;
 }
-
+/* blah blah */
 .col{
     width: 66%;
 }
-
+/* blah blah */
 header{
     width: 100%;
 }
-
+/* blah blah */
 .responsive{
     width: 100%;
     position: center;
     background-size: cover;
     background-position: center;
     background: no-repeat;
+    border-radius: 8px;
 }
-
+/* blah blah */
 h2{
     width: 100%;
     position: center;
@@ -103,7 +102,7 @@ h2{
     font-size: 5vw;
     text-align: justify;
 }
-
+/* blah blah */
 .main-advert{
     width: 100%;
     position: center;
@@ -111,7 +110,7 @@ h2{
     background-position: center;
     background: no-repeat;
 }
-
+/* blah blah */
 .section-header{
     position: relative;
     display: flex;
@@ -120,10 +119,37 @@ h2{
     min-height: 100vh;
     background: url(..assets/hero-image/1hero-image.jpg)
 }
+/* blah blah */
 
-img{
-    max-width: 100%;
-    height: auto;
+.image-section2{
+    margin-bottom: 20px;
+    align-content: center;
 }
 
+h4{
+   text-align: center; 
+}
 
+.button{
+    margin: 32px 0px 0px;
+    padding: 64px 0px 0px;
+    color: #277BBA;
+}
+   
+.col-6{
+    width: 30%;
+}
+
+.box{
+    width: 100%;
+    float: center;
+    
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 15);
+
+}
+
+.container{
+    float: center;
+}
