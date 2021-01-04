@@ -144,8 +144,9 @@ h4{
 }
 
 .container{
-    float: center;
     margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
 
 }
 
@@ -157,11 +158,26 @@ button{
     margin-top: 50px;
 }
 
-hearder{
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
 .navbar-custom {
     background-color: #ff5500;
+}
+
+div#map {
+    min-height: 360px;
+    width: 100%;
+    align-items: right;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.button{
+    text-align: center;
+}
+
+.p4{
+    text-align: center;
 }

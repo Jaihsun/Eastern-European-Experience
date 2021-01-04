@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css"/>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+<!--jQuery Fancybox-------------------------------------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
     <title>Eastern European Experience</title>
 </head>
 
@@ -22,8 +28,11 @@
 
 <!--logo and navigation bar------------------------------------------------------------------------------------------------->
 
-<section class="header-section">
+<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
+<script asnyc defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_31lerbenlI-ThmXVOmhAu3H5hU3Epx4&callback=initMap"></script>
+
+<section class="header-section">
 
 </section>
 
@@ -37,7 +46,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-lg-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
       </li>
         <li class="nav-item">
         <a class="nav-link" href="#">About</a>
@@ -46,13 +55,14 @@
         <a class="nav-link" href="#">Booking</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="contact.html">Contact Us</a>
       </li>
     </ul>
   </div>
 </nav>
 </div>
 </header>
+
 <!--hero image------------------------------------------------------------------------------------------------->
 <div class="hero-image">
     <img class="hero-image" src="assets/images/kiev/kiev-city.jpg" alt="">
@@ -81,6 +91,88 @@
                </div>
             </div> 
         </div>
-  
+
+<!--Google maps ---------------------------------------------------------------------------------------------------------------->
+    <div class="container-map">
+        <div id="map">
+        </div>
+    </div>
+
+<p>test</p>
+
+<!--Fancybox---------------------------------------------------------------------------------------------------------------->
+<section class="container">
+<div class="row">
+    <div class="col-lg-3">
+         <a href="assets/images/kiev/st-michaels-goldendomed.v2.jpg" data-fancybox="images" data-caption="St Michaels Golden Dome Monastery ">
+            <image class="img-fluid" src="assets/images/kiev/st-michaels-goldendomed.v2.jpg" alt=""/>
+        </a>
+    </div>
+
+    <div class="col-lg-3">
+        <a href="assets/images/kiev/saint-sophia-cathedral.v2.jpg" data-fancybox="images" data-caption="Saint Sophia Cathedral">
+            <image class="img-fluid" src="assets/images/kiev/saint-sophia-cathedral.v2.jpg" alt="" />
+        </a>
+    </div>
+
+    <div class="col-lg-3">
+        <a href="assets/images/kiev/kyevo-pecherska.v2.jpg" data-fancybox="images" data-caption="2">
+	        <image class="img-fluid" src="assets/images/kiev/kyevo-pecherska.v2.jpg" alt="" />
+        </a>
+    </div>
+
+    <div class="col-lg-3">
+        <a href="assets/images/kiev/st-andrews-church.v2.jpg" data-fancybox="images" data-caption="2">
+	        <image class="img-fluid" src="assets/images/kiev/st-andrews-church.v2.jpg" alt="" />
+        </a>
+    </div>
+
+</div>
+</section>
+
+<script>
+    function initMap() {
+        var map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 14,
+            center: {
+                lat: 50.4501,
+                lng: 30.5234
+            }
+        });
+    
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    var locations = [
+        { lat: 50.45296, lng: 30.51433},
+        {lat: 50.45624, lng: 30.52291},
+        { lat: 50.45306, lng: 30.51432}
+    ];
+   
+    var markers = locations.map(function(location, i) {
+        return new google.maps.Marker({
+            position: location,
+            label: labels[i % labels.length]
+        });
+     });
+
+    var markerCluster= new MarkerClusterer(map, markers, {
+        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
+    });
+
+};
+        
+</script>
+
+
+<footer>
+    <div>
+
+    </div>
+
+</footer>
+
 </body>
+
+
+
 </html>
