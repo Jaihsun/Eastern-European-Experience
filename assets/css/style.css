@@ -131,6 +131,7 @@ h2{
 
 h4{
    text-align: center; 
+   font-size: 3vw;
 }
 
 .col-6{
@@ -153,11 +154,17 @@ h4{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    color: black;
+}
 
+.img-fluid{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .p1{
     margin-top: 50px;
+    font-size: larger;
 }
 
 .navbar-custom {
@@ -185,6 +192,8 @@ html, body{
 
 .p4{
     text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 footer{
@@ -193,6 +202,9 @@ footer{
 }
 
 .media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     position: relative;
     top: 40%;
     left: 50%;
@@ -201,7 +213,7 @@ footer{
 }
 
 .social-icons {
-    text-align: left;
+    text-align: center;
     width: 100%;
 }
 
