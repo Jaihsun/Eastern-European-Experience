@@ -19,7 +19,6 @@ body, html
     position: relative;
     text-align: center;
      object-fit: fill;
-     margin-bottom: 20px;
 }
 
 /* blah blah */
@@ -58,7 +57,11 @@ body, html
 }
 /* blah blah */
 .navbar{
-    padding: 20px 0;
+    padding: 20px 20;
+}
+
+.navbar-toggler{
+    text-align: center;
 }
 /* blah blah */
 .navbar-brand{
@@ -99,6 +102,8 @@ body, html
 /* blah blah */
 .col{
     width: 66%;
+    text-align: center;
+    align-items: center;
 }
 /* blah blah */
 header{
@@ -170,8 +175,8 @@ h4{
 }
 
 .container{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 0px;
     text-align: center;
     color: black;
 }
@@ -220,6 +225,11 @@ footer{
     height: 100px;
 }
 
+.social-links{
+    border: 1px solid #3b5998;
+    border-radius: 50%;
+}
+
 .media {
     width: 100%;
     display: flex;
@@ -231,21 +241,20 @@ footer{
     text-align: center;
 }
 
-.social-icons {
-    text-align: center;
-    width: 100%;
-}
-
 li {
     list-style: none;
     margin: 10px 15px;
     display: inline-block;
     font-size: 20px;
     padding: 10px 10px;
-    color: #3b5998;
-    border: 1px solid #3b5998;
     border-radius: 50%;
     transition: 0.5s;
+    margin-top: 30px;
+}
+
+.social-icons {
+    text-align: center;
+    width: 100%;
     margin-top: 30px;
 }
 
@@ -260,5 +269,17 @@ li:hover {
     transform: translateX(-50%) !important;
     top: 100% !important;
     text-align: center;
+}
+
+.dropdown-menu > li > a{
+    text-align: center;
+}
+
+@media (min--moz-device-pixel-ratio: 1.5),
+       (-o-min-device-pixel-ratio: 3/2),
+       (-webkit-min-device-pixel-ratio: 1.5),
+       (min-resolution: 1.5dppx) {
+
+   /* your retina rules here */
 
 }
