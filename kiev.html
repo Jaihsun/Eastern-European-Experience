@@ -195,75 +195,104 @@
 </section>
 
 <script>
-    function initMap() {
-        var map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 14,
-            center: {
-                lat: 50.4501,
-                lng: 30.5234
-            }
-        });
+
+
+        var map;
+        var InforObj = [];
+        var centerCords = {
     
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            lat: 50.4551,
+            lng: 30.5234
+        };
 
-    var locations = [
-        { lat: 50.45600, lng: 30.52303},
-        { lat: 50.45311, lng: 30.51434},
-        { lat: 50.45069, lng: 30.52298},
-        { lat: 50.45919, lng: 30.51794},     
+        var markersOnMap = [{
+                placeName: "Kiev (St Michaels Golden Dome)",
+                LatLng: [{
+                    lat: 50.45600, 
+                    lng: 30.52303
+                }]
+            },
+            {
 
-    ];
-   
-    var markers = locations.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        });
-     });
-
-    var markerCluster= new MarkerClusterer(map, markers, {
-        imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
-    });
-
- const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-    '<div id="bodyContent">' +
-    "<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large " +
-    "sandstone rock formation in the southern part of the " +
-    "Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) " +
-    "south west of the nearest large town, Alice Springs; 450&#160;km " +
-    "(280&#160;mi) by road. Kata Tjuta and Uluru are the two major " +
-    "features of the Uluru - Kata Tjuta National Park. Uluru is " +
-    "sacred to the Pitjantjatjara and Yankunytjatjara, the " +
-    "Aboriginal people of the area. It has many springs, waterholes, " +
-    "rock caves and ancient paintings. Uluru is listed as a World " +
-    "Heritage Site.</p>" +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-    "(last visited June 22, 2009).</p>" +
-    "</div>" +
-    "</div>";
-  const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-  });
-  const marker = new google.maps.Marker({
-    position: uluru,
-    map,
-    title: "Uluru (Ayers Rock)",
-  });
-  marker.addListener("click", () => {
-    infowindow.open(map, marker);
-  });
-
-
-
-};
-
-
+                placeName: "Saint Sophia's Cathedral",
+                LatLng: [{
+                    lat: 50.45311,
+                    lng: 30.51434
+                }]
+            },
+            {
+                placeName: "Independence Square",
+                LatLng: [{
+                    lat: 50.45069,
+                    lng: 30.52298
+                }]
+            },
+            {
+                placeName: "St. Andrew's Church",
+                LatLng: [{
+                    lat: 50.45919,
+                    lng: 30.51794
+                }]
+            },
         
+        ];
+
+        window.onload = function () {
+            initMap();
+        };
+
+        function addMarkerInfo() {
+            for (var i = 0; i < markersOnMap.length; i++) {
+                var contentString = '<div id="content"><h1>' + markersOnMap[i].placeName +
+                    '</h1><p>Lorem ipsum dolor sit amet, vix mutat posse suscipit id, vel ea tantas omittam detraxit.</p></div>';
+
+                const marker = new google.maps.Marker({
+                    position: markersOnMap[i].LatLng[0],
+                    map: map
+                });
+
+                const infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    maxWidth: 200
+                });
+
+                marker.addListener('click', function () {
+                    closeOtherInfo();
+                    infowindow.open(marker.get('map'), marker);
+                    InforObj[0] = infowindow;
+                });
+                // marker.addListener('mouseover', function () {
+                //     closeOtherInfo();
+                //     infowindow.open(marker.get('map'), marker);
+                //     InforObj[0] = infowindow;
+                // });
+                // marker.addListener('mouseout', function () {
+                //     closeOtherInfo();
+                //     infowindow.close();
+                //     InforObj[0] = infowindow;
+                // });
+            }
+        }
+
+        function closeOtherInfo() {
+            if (InforObj.length > 0) {
+                /* detach the info-window from the marker ... undocumented in the API docs */
+                InforObj[0].set("marker", null);
+                /* and close it */
+                InforObj[0].close();
+                /* blank the array */
+                InforObj.length = 0;
+            }
+        }
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: centerCords
+            });
+            addMarkerInfo();
+        }
+    
 </script>
 
 
