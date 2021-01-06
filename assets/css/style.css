@@ -5,7 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 /* blah blah */
-*
+body, html
 {
     font-family: 'Oswald' sans-serif;
 }
@@ -16,7 +16,6 @@
     background-image: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-size:cover;
     position: relative;
     text-align: center;
      object-fit: fill;
@@ -33,6 +32,25 @@
   color: white;
   font-size: 9vw;
 }
+
+.hero-text-smaller-img {
+  text-align: center;
+  letter-spacing: 0.1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(18px,9vw, 34px);
+}
+
+@media (max-width: 100px) {
+    .hero-text-smaller-img {
+        max-width: 100px;
+    }
+}
+
+
 /* blah blah */
 .main-advert{
     font-size: 80px;
@@ -209,7 +227,7 @@ footer{
     position: relative;
     top: 40%;
     left: 50%;
-    transform: translate(-53%, -50% );
+    transform: translate(-50%, -50% );
     text-align: center;
 }
 
@@ -220,10 +238,10 @@ footer{
 
 li {
     list-style: none;
-    margin: 10px 30px;
+    margin: 10px 15px;
     display: inline-block;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     color: #3b5998;
     border: 1px solid #3b5998;
     border-radius: 50%;
@@ -235,4 +253,12 @@ li:hover {
     color: #292929;
     border: 1px solid #292929;
     transition: 0.5s;
+}
+
+.dropdown-menu{
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100% !important;
+    text-align: center;
+
 }
