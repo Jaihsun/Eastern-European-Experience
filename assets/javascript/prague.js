@@ -1,8 +1,7 @@
-
-   
-    var map;
-        var InforObj = [];
-        var centerCords = {
+var map;
+var InforObj = [];
+var centerCords = {
+    
             zoom: 50,
             lat: 50.08900,         
             lng: 14.41141
@@ -65,16 +64,7 @@
                     infowindow.open(marker.get('map'), marker);
                     InforObj[0] = infowindow;
                 });
-                // marker.addListener('mouseover', function () {
-                //     closeOtherInfo();
-                //     infowindow.open(marker.get('map'), marker);
-                //     InforObj[0] = infowindow;
-                // });
-                // marker.addListener('mouseout', function () {
-                //     closeOtherInfo();
-                //     infowindow.close();
-                //     InforObj[0] = infowindow;
-                // });
+                
             }
         }
 

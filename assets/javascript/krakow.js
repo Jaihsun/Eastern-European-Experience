@@ -62,16 +62,7 @@
                     infowindow.open(marker.get('map'), marker);
                     InforObj[0] = infowindow;
                 });
-                // marker.addListener('mouseover', function () {
-                //     closeOtherInfo();
-                //     infowindow.open(marker.get('map'), marker);
-                //     InforObj[0] = infowindow;
-                // });
-                // marker.addListener('mouseout', function () {
-                //     closeOtherInfo();
-                //     infowindow.close();
-                //     InforObj[0] = infowindow;
-                // });
+                
             }
         }
 

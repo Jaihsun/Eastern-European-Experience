@@ -1,4 +1,3 @@
-
 function sendMail (params) {
     var tempParams = {
         from_name: document.gtElementById("fromName").value,
@@ -8,6 +7,9 @@ function sendMail (params) {
 
     emailjs.send('gmail','template_jvyd3tf', tempParams )
     .then(function(res){
-        console.log("success", res.status);
+        alert('Message recieved! We\'ll be in touch shortly');
+        window.location.replace('/');
+    }, function(error) {
+        alert('Whoops! Something went wrong!');
     })
 }
