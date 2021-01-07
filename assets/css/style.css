@@ -4,28 +4,42 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* body*/
-body, html
-{
-    font-family: 'Oswald' sans-serif;
+
+/* ==========================================================================
+   image
+   ========================================================================== */
+
+   /* hero image */
+   .image-section2{
+    margin-bottom: 20px;
+    align-content: center;
 }
-/* image */
+
+.img-fluid{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* hero image */
 .hero-image{
     height: auto;
     width:100%;
-    background-image: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     text-align: center;
      object-fit: fill;
 }
+/* button image */
+.button-image{
+    background-color: #e7e7e7;
+}
 
+/* ==========================================================================
+   text
+   ========================================================================== */
 
-
-
-
-/* text --------------------------------------------------------------------------------*/
+/* text --*/
 .hero-text {
   text-align: center;
   position: absolute;
@@ -58,9 +72,11 @@ body, html
     text-shadow: 2px 2px 4px #000000;
 }
 
-/* Navbar------------------------------------------------------------------ */
+/* ==========================================================================
+   navbar
+   ========================================================================== */
 .navbar{
-    padding: 20px 20;
+    padding: 10px 10px;
 }
 
 .navbar-toggler{
@@ -71,7 +87,6 @@ body, html
      color: #FFFF;
      text-align: center;
 }
-
 
 .navbar-brand{
     font-weight: 600;
@@ -86,10 +101,13 @@ body, html
     margin-right: 15px;
 }
 
+.navbar-custom {
+    background-color: #3B3380;
+}
+
 .navbar-toggler{
     color:  #FFFF;
 }
-
 
 .nav-item{
     font-weight: 600;
@@ -100,38 +118,47 @@ body, html
 .nav-link dropdown-toggle {
     background: #262626;
 }
-/* blah blah */
-.button-image{
-    background-color: #e7e7e7;
+
+.dropdown-menu{
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 100% !important;
+    text-align: center;
 }
-/* blah blah */
-.prague-thumbnail{
-    max-width: 100%;
-    height: auto;
+
+.dropdown-menu > li > a{
+    text-align: center;
 }
-/* blah blah */
+
+/* ==========================================================================
+   general styling
+   ========================================================================== */
+   /* body*/
+body, html
+{
+    font-family:'Oswald', sans-serif;
+}
+
 .col{
     width: 66%;
     text-align: center;
     align-items: center;
 }
-/* blah blah */
+
 header{
     width: 100%;
 }
-/* blah blah */
+
 .responsive{
     width: 100%;
-    position: center;
     background-size: cover;
     background-position: center;
     background: no-repeat;
     border-radius: 8px;
 }
-/* blah blah */
+
 h2{
     width: 100%;
-    position: center;
     background-size: cover;
     background-position: center;
     background: no-repeat;
@@ -139,15 +166,14 @@ h2{
     text-align: justify;
     margin-bottom: 20px;
 }
-/* blah blah */
+
 .main-advert{
     width: 100%;
-    position: center;
     background-size: cover;
     background-position: center;
     background: no-repeat;
 }
-/* blah blah */
+
 .section-header{
     position: relative;
     display: flex;
@@ -155,12 +181,6 @@ h2{
     align-items: center;
     min-height: 100vh;
     background: url(..assets/hero-image/1hero-image.jpg)
-}
-/* blah blah */
-
-.image-section2{
-    margin-bottom: 20px;
-    align-content: center;
 }
 
 h4{
@@ -174,13 +194,13 @@ h4{
 
 .box{
     width: 100%;
-    float: center;
+    float: none;
     background-color: #fff;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 5px;
     padding-right: 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 15);
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 14);
 
 }
 
@@ -191,24 +211,9 @@ h4{
     color: black;
 }
 
-.img-fluid{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
 .p1{
     margin-top: 50px;
     font-size: larger;
-}
-
-.navbar-custom {
-    background-color: #3B3380;
-}
-
-div#map {
-    min-height: 360px;
-    width: 100%;
-    align-items: right;
 }
 
 html, body{
@@ -240,17 +245,6 @@ footer{
     border-radius: 50%;
 }
 
-.media {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50% );
-    text-align: center;
-}
-
 li {
     list-style: none;
     margin: 10px 15px;
@@ -262,33 +256,48 @@ li {
     margin-top: 30px;
 }
 
-.social-icons {
-    text-align: center;
-    width: 100%;
-    margin-top: 30px;
-}
-
 li:hover {
     color: #292929;
     border: 1px solid #292929;
     transition: 0.5s;
 }
 
-.dropdown-menu{
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    top: 100% !important;
+/* ==========================================================================
+   social media 
+   ========================================================================== */
+
+.social-icons {
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.media {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50% );
     text-align: center;
 }
 
-.dropdown-menu > li > a{
-    text-align: center;
-}
+/* ==========================================================================
+   media query
+   ========================================================================== */
 
 @media (min--moz-device-pixel-ratio: 1.5),
        (-o-min-device-pixel-ratio: 3/2),
        (-webkit-min-device-pixel-ratio: 1.5),
        (min-resolution: 1.5dppx) {
+}
 
-   /* your retina rules here */
+/* ==========================================================================
+   map
+   ========================================================================== */
+div#map {
+    min-height: 360px;
+    width: 100%;
+    align-items: center;
 }
