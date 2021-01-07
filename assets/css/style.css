@@ -4,12 +4,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
-/* blah blah */
+/* body*/
 body, html
 {
     font-family: 'Oswald' sans-serif;
 }
-/* blah blah */
+/* image */
 .hero-image{
     height: auto;
     width:100%;
@@ -21,7 +21,11 @@ body, html
      object-fit: fill;
 }
 
-/* blah blah */
+
+
+
+
+/* text --------------------------------------------------------------------------------*/
 .hero-text {
   text-align: center;
   position: absolute;
@@ -49,21 +53,32 @@ body, html
     }
 }
 
-
-/* blah blah */
 .main-advert{
     font-size: 80px;
     text-shadow: 2px 2px 4px #000000;
 }
-/* blah blah */
+
+/* Navbar------------------------------------------------------------------ */
 .navbar{
     padding: 20px 20;
+}
+
+
+.navbar .navbar-nav .dropdown-menu {
+    position: relative !important;
+ 
 }
 
 .navbar-toggler{
     text-align: center;
 }
-/* blah blah */
+
+.dropdown-item{
+     color: #FFFF;
+     text-align: center;
+}
+
+
 .navbar-brand{
     font-weight: 600;
     text-transform: uppercase;
@@ -80,13 +95,14 @@ body, html
 .navbar-toggler{
     color:  #FFFF;
 }
-/* blah blah */
+
+
 .nav-item{
     font-weight: 600;
     text-transform: uppercase;
     color:#fff;
 }
-/* blah blah */
+
 .nav-link dropdown-toggle {
     background: #262626;
 }

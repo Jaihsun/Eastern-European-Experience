@@ -1,3 +1,4 @@
+
 function sendMail (params) {
     var tempParams = {
         from_name: document.gtElementById("fromName").value,
@@ -5,7 +6,7 @@ function sendMail (params) {
         message: document.gtElementById("msg").value,
     };
 
-    emailjs.send('gmail','template_jvyd3tf',tempParam )
+    emailjs.send('gmail','template_jvyd3tf', tempParams )
     .then(function(res){
         console.log("success", res.status);
     })
