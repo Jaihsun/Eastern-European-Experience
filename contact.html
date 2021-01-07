@@ -20,6 +20,7 @@
 </head>
 
 <body>
+
     <header>
 
 <!--jQuery css-------------------------------------------------------------------------------------------------------------->
@@ -31,6 +32,8 @@
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 
 <script asnyc defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_31lerbenlI-ThmXVOmhAu3H5hU3Epx4&callback=initMap"></script>
+
+<!--Javascript EmailJS-------------------------------------------------------------------------------------------------------------->
 
 <section class="header-section">
 
@@ -66,6 +69,15 @@
   </div>
 </nav>
 </div>
+
+<script src="index.js"></script>
+
+    <scripttype="text/javascript">
+    (function() {
+    emailjs.init("user_QkukUtbPBNesWrre0ieT4");
+    })();
+    </script>
+
 </header>
 
 <!--hero image------------------------------------------------------------------------------------------------->
@@ -78,12 +90,12 @@
        <div class="container">
             <div class="row">
                <div class="col">
-                   <h1>
+                   <h2>
                        Itching to travel?
-                   </h1>
-                   <h4>
+                   </h2>
+                   <h3>
                        Lucky you - planning your trip couldn’t be easier. Your perfect vacation getaway is a few clicks away.
-                   </h4>
+                   </h3>
 
                </div>
             </div> 
@@ -107,9 +119,10 @@
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 </div>
+
  <div class="button">
         <a href="kiev.html">
-            <button type="button" class="btn btn-outline-secondary">Send</button>
+            <button onclick='sendMail()' type="button" class="btn btn-outline-secondary">Send Email</button>
         </a>  
 
     </div>
