@@ -1,3 +1,5 @@
+// Based on Google maps info windows JAvaScript API and customised for project requirements.
+
 var map;
 var InforObj = [];
 var centerCords = {    

@@ -7,8 +7,8 @@
    image
    ========================================================================== */
 
-   /* hero image */
-   .image-section2{
+/* hero image */
+.image-section2{
     margin-bottom: 20px;
     align-content: center;
 }
@@ -64,7 +64,7 @@
         max-width: 100px;
     }
 }
-
+/* main text over hero image --*/
 .main-advert{
     font-size: 80px;
     text-shadow: 2px 2px 4px #000000;
@@ -155,6 +155,10 @@ header{
     border-radius: 8px;
 }
 
+.nav-item{
+    border-style: none;
+}
+
 h2{
     width: 100%;
     background-size: cover;
@@ -238,11 +242,15 @@ footer{
     height: 100px;
 }
 
+
+/* main text over hero image --*/
+/*--Reference from adding Social Media Icons on youtube--*/
 .social-links{
     border: 1px solid #3b5998;
     border-radius: 50%;
 }
 
+/*--Reference from adding Social Media Icons on youtube--*/
 li {
     list-style: none;
     margin: 10px 15px;
@@ -253,12 +261,16 @@ li {
     transition: 0.5s;
     margin-top: 30px;
 }
-
+/*--Reference from adding Social Media Icons on youtube--*/
 li:hover {
     color: #292929;
-    border: 1px solid #292929;
     transition: 0.5s;
 }
+
+.dropdown-menu{
+    text-align: center;
+}
+
 
 /* ==========================================================================
    social media 
@@ -269,7 +281,7 @@ li:hover {
     width: 100%;
     margin-top: 30px;
 }
-
+/*--Reference from adding Social Media Icons on youtube--*/
 .media {
     width: 100%;
     display: flex;
@@ -284,7 +296,7 @@ li:hover {
 /* ==========================================================================
    media query
    ========================================================================== */
-
+/*--CSS Tricks Retina Display Media Query--*/
 @media (min--moz-device-pixel-ratio: 1.5),
        (-o-min-device-pixel-ratio: 3/2),
        (-webkit-min-device-pixel-ratio: 1.5),

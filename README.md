@@ -33,7 +33,9 @@ This is the main marketing website for Code Institute. It is designed to be resp
     -   #### Colour Scheme
         -   The two main colours used are Code Insititue light prurple (#3B3380), and white. 
     -   #### Typography
-        -   The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
+        -   The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback
+         font in case for any reason the font isn't being imported into the site correctly. The logo was two words and
+         was styled in the redressed font which was sourced from Google Fonts.
     -   #### Imagery
         -   Particular attention was paid to the imagery of this website to promote the beauty of Eastern European architecture. The large, background hero image of Prague city was used to 
         provide a striking visual and catch the user's attention. The hero image was cosen as it strikes the perfect balance to the timeless beauty that is the city of Prague and also 
@@ -50,7 +52,7 @@ This is the main marketing website for Code Institute. It is designed to be resp
 -   Interactive elements such as a google maps api, an interative information window within the map, an interactive javascript api automatic email service,
    the navigation bar is scrolls down the page with the browser, the social media icons are clickable will ligthup with a hover around the icon. 
 
--  Fancy box gallery showing 4 number of pictures and a grid.
+-  Javascript API Fancy box gallery showing 4 number of pictures and a grid.
 
 
 ## Technologies Used
@@ -77,17 +79,18 @@ This is the main marketing website for Code Institute. It is designed to be resp
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
 1. [Balsamiq:](https://balsamiq.com/)
     - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+1. [YouTube:](https://youtube.com)
+    - Youtube was used to research general techincal queries relating to CSS3, HTML5 and Javascript.
 
 ## Testing
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
--   [W3C Markup Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) - [Results](https://github.com/)
+-   [W3C ](https://jigsaw.w3.org/css-validator/#validate_by_input)
+-   [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) 
+-   [Esprima](https://esprima.org/demo/validate.html)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -150,7 +153,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   The Website was tested on Google Chrome, Internet Explorer, Microsoft Edge and Safari browsers.
 -   The website was viewed on a variety of devices such as Desktop, Laptop, iPhone7, iPhone 8 & iPhoneX.
 -   A large amount of testing was done to ensure that all pages were linking correctly.
--   Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+-   Friends and family members were asked to review the site and documentation to point out any bugs and/or
+    user experience issues.
 
 ### Known Bugs
 
@@ -160,6 +164,9 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 -   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
 -   The nabar overlaps the hero image text on some mobile phones. 
 -   Dropdown menu when you click on cities dropdown, in some mobile phones creates a border radis and it moved to the left.
+-   According to HTML validator, the button element must not appear as a decendent of the anchor tag. I wasn't able to 
+    resolve this.
+-   JavaScript had a number of undefined variables however teh map and info windows were fully functional and no errors 
 
 ## Deployment
 
@@ -183,32 +190,6 @@ By forking the GitHub Repository we make a copy of the original repository on ou
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. I cannot fork because I own the repository and I am not a member of any organisations.
 
-### Making a Local Clone
-
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
-2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, and then paste the URL you copied in Step 3.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-```
-
-7. Press Enter. Your local clone will be created.
-
-```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
-```
-
-Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
-
 ## Credits
 
 ### Code
@@ -221,11 +202,27 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
--   https://www.lonelyplanet.com/
+-   https://www.lonelyplanet.com/ Details regarding the cities 
+
+-   How to make a Responsive Travel Website using Html CSS & Javascript | Step by Step Tutorial [YouTube.comm]
+-   How To Make Responsive Website Using Html CSS & Javascript | Gym & Fitness Web Design Tutorial [YouTube.com]
+-   Adding Social Media Icons | HTML & CSS [Youtube.com]
+-   Send Email directly from JavaScript | Tutorial [YouTube.com]
+-   Googgle maps API tutourials | Google Developers [YouTube.com]
+-   CSS Tricks Retina Display Media Query [https://css-tricks.com/snippets/css/retina-display-media-query/]
+-   Google maps Info Window [https://developers.google.com/maps/documentation/javascript/infowindows]
+-   Wild Atlantic Surfing website [https://github.com/Jaihsun/Wild-Atlantic-Surfing]
+-   How to add maps using Javascript API - Geocasts Google Maps Patform [YouTube.com]
+-   Working with markers: custom markers and marker clustering - Geocasts Google Maps Patform [YouTube.com]
+-   Interactive Resume 2.0 - Code Institute [YouTube.com]
+-   Sticky Navigation Bar On Scroll Using Vanilla JavaScript | [YouTube.com]
+-   Banner image/Hero Image Tutorial with HTML and CSS [YouTube.com]
+-   Bootstrap Grid System The Complete Guide - In Action [YouTube.com]
+-   Learn HTML/CSS - #12 - Margins and Paddings [1080p] [YouTube.com]
+-   Responsive Banner and Navigation Bar using Bootstrap 4 | Responsive Web Design [YouTube.com]
+-   Animated Responsive Navbar Tutorial [YouTube.com]
 
 ### Media
-
-## Photos
 
 -   https://www.google.com/url?sa=i&url=https%3A%2F%2Fnew.poihalyznamy.lviv.ua%2F2016%2F06%2F17%2Fvishegradska-trijka%2F&psig=AOvVaw1UL7KOg7ZtmC7jWzU0xf-S&ust=1610161398443000&source=images&cd=vfe&ved=2ahUKEwinpODirIvuAhXpWxUIHX-ECRUQr4kDegUIARCLAQ
 -   https://www.dreamstime.com/prague-czech-republic

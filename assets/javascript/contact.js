@@ -1,3 +1,5 @@
+// Based onSend Email directly from JavaScript video and customised for project requirements.
+
 function sendMail (params) {
     var tempParams = {
         from_name: document.gtElementById("fromName").value,
