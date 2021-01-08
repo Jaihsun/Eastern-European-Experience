@@ -1,9 +1,7 @@
 <h1 align="center">Eastern European Experience</h1>
 
-[View the live project here.](https://####)
+[View the live project here.](https://github.com/Jaihsun/Eastern-European-Experience)
 This is the main marketing website for Code Institute. It is designed to be responsibe and accessible on a range of devices, making it easy to navigate for potential students and partners.
-
-<h2 align="center"><img src="https://i.ibb.co/TYvTXz1/Example-CI.png"></h2>
 
 ## User Experience (UX)
 
@@ -12,47 +10,48 @@ This is the main marketing website for Code Institute. It is designed to be resp
     -   #### First Time Visitor Goals
 
         1. As a First Time Visitor, I want to explore Eastern Europe as a potential holiday destination. The main purpose of this website is to promote Eastern European tourism for the Ukraine, Poland, Hungary and Czech Republic.
-        For the purposes of this webite, Eastern Europe will be limited to 4 countries Poland, Ukraine, Hungary and Russia.In particular, the cities of Krakow Poland, Budapest Hungary, St. Petersberg Russia and Kiev Ukraine.
+        For the purposes of this webite, Eastern Europe will be limited to 4 countries Poland, Ukraine, Hungary and Czech Republic.In particular, the cities of Krakow Poland, Budapest Hungary, Prague and Kiev.
         2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content that provides a historical context for each city, lists the main attractions for those cities.
         3. The website will show case the most famous attractions in each city and include a gallary feature and a map to showcase these cities 
         4. The website is essentially promoting a travel booking service and will allow the customoer to exchange contsct details and be able to get into contact with the company to book. 
-        5. As a first time visitor, I can get truusted testimonials on the service whichnis outlines on the website.
         
         
 
     -   #### Returning Visitor Goals
 
-        1. As a Returning Visitor, I want to browse the gallery and decide which city is the best.
+        1. As a Returning Visitor, I want to browse the gallery and decide which city is the best visit.
         2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
         
 
     -   #### Frequent User Goals
-        1. As a Frequent User, I want to see if new cities ave been added to the site package.
-        2. As a frequent User, I want to check to see if there are any new articles.
+        1. As a Frequent User, I want to see if new cities ave been added to the site packages list.
+        2. As a frequent User, I want to check to see if there are any new articles or sales.
         3. As  a frequesnt user, I want to sign up to t he newsletter so that I am eamailed any major updates and/or changes to the website or organisation. 
         
 
 -   ### Design
     -   #### Colour Scheme
-        -   The two main colours used are Code Insititue light grey (#e1e8e3), and white.
+        -   The two main colours used are Code Insititue light prurple (#3B3380), and white. 
     -   #### Typography
-        -   The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+        -   The Oswald font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. 
     -   #### Imagery
-        -   Particular attention was paid to the imagery of this website to promote the beauty of Eastern European architecture. The large, background hero image of Prague city was used to provide a striking visual and catch the user's attention. The hero image was cosen as it strikes the perfect balance to the timeless beauty that is the city of Prague and also vibrant and dynamic sunrise. 
+        -   Particular attention was paid to the imagery of this website to promote the beauty of Eastern European architecture. The large, background hero image of Prague city was used to 
+        provide a striking visual and catch the user's attention. The hero image was cosen as it strikes the perfect balance to the timeless beauty that is the city of Prague and also 
+        vibrant and dynamic sunrise. 
 
 *   ### Wireframes
 
-    -   Home Page Wireframe - [View](https://github.com/)
-
-    -   Mobile Wireframe - [View](https://github.com/)
-
-    -   Contact Us Page Wireframe - [View](https://github.com/)
+    -   Home, Mobile and Contact Page Wireframe - [View](https://github.com/Jaihsun/Eastern-European-Experience/tree/master/wireframe/)
 
 ## Features
 
 -   Responsive on all device sizes
 
--   Interactive elements
+-   Interactive elements such as a google maps api, an interative information window within the map, an interactive javascript api automatic email service,
+   the navigation bar is scrolls down the page with the browser, the social media icons are clickable will ligthup with a hover around the icon. 
+
+-  Fancy box gallery showing 4 number of pictures and a grid.
+
 
 ## Technologies Used
 
@@ -60,7 +59,7 @@ This is the main marketing website for Code Institute. It is designed to be resp
 
 -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
--   [jQuery](https://jquery.com/)
+-   [javascript](https://www.javascript.com/resources)
 
 ### Frameworks, Libraries & Programs Used
 
@@ -155,9 +154,12 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs
 
--   On some mobile devices the Hero Image pushes the size of screen out more than any of the other content on the page.
-    -   A white gap can be seen to the right of the footer and navigation bar as a result.
+-   On some mobile devices the Hero Image pushes the size of the social icons into the hero image
+-   On some mobile devices the size of the "independence Square" text on the kiev.html.
+-   The heading inside the info window on the map looks too big on certain mobile phones
 -   On Microsoft Edge and Internet Explorer Browsers, all links in Navbar are pushed upwards when hovering over them.
+-   The nabar overlaps the hero image text on some mobile phones. 
+-   Dropdown menu when you click on cities dropdown, in some mobile phones creates a border radis and it moved to the left.
 
 ## Deployment
 
@@ -165,21 +167,21 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 The project was deployed to GitHub Pages using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Jaihsun/Eastern-European-Experience)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
     - Alternatively Click [Here](https://raw.githubusercontent.com/) for a GIF demonstrating the process starting from Step 2.
 3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
 4. Under "Source", click the dropdown called "None" and select "Master Branch".
 5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site [link](https://github.com) in the "GitHub Pages" section.
+6. Scroll back down through the page to locate the now published site [link](https://jaihsun.github.io/Eastern-European-Experience/) in the "GitHub Pages" section.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/Jaihsun/Eastern-European-Experience)
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. You should now have a copy of the original repository in your GitHub account.
+3. I cannot fork because I own the repository and I am not a member of any organisations.
 
 ### Making a Local Clone
 
@@ -219,13 +221,31 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Content
 
--   All content was written by the developer.
-
--   Psychological properties of colours text in the README.md was found [here](http://www.colour-affects.co.uk/psychological-properties-of-colours)
+-   https://www.lonelyplanet.com/
 
 ### Media
 
--   All Images were created by the developer.
+## Photos
+
+-   https://www.google.com/url?sa=i&url=https%3A%2F%2Fnew.poihalyznamy.lviv.ua%2F2016%2F06%2F17%2Fvishegradska-trijka%2F&psig=AOvVaw1UL7KOg7ZtmC7jWzU0xf-S&ust=1610161398443000&source=images&cd=vfe&ved=2ahUKEwinpODirIvuAhXpWxUIHX-ECRUQr4kDegUIARCLAQ
+-   https://www.dreamstime.com/prague-czech-republic
+-   seepraha.com
+-   artchateau.com
+-   https://commons.wikimedia.org/wiki/File:St._Michael%27s_Golden-Domed_Monastery._Kiev,_Ukraine,_Eastern_Europe..jpg
+-   https://indico.bitp.kiev.ua/event/6/page/30-photo-gallery
+-   https://cutewallpaper.org/21/kiev-wallpaper/view-page-21.html
+-   https://changeua.com/afisha-na-1-2-lipnya-kudi-piti-u-kiyevi/
+-   https://www.istockphoto.com/photo/cloth-hall-and-st-marys-basilica-on-market-square-in-krakow-poland-gm862780720-143061959
+-   https://www.dreamstime.com/photos-images/st-florian.html
+-   https://zh-cn.facebook.com/pg/dunfermlineramsay/posts/?ref=page_internal
+-   https://www.mycitytrip.com/krakau/erlebnisse
+-   http://www.nielsens.org.uk/eastern-europe-adventure-tour.html
+-   https://www.timeout.com/budapest/things-to-do/buda-castle
+-   https://arrangementsabroad.wordpress.com/2015/12/21/the-queen-of-rivers/
+-   http://budnews.hu/news/News/1800/things-that-have-changed-in-budapest-this-year
+-   http://budnews.hu/news/News/1800/things-that-have-changed-in-budapest-this-year
+-   https://www.budapest.org/en/st-stephens-basilica/
+
 
 ### Acknowledgements
 
